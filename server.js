@@ -13,8 +13,6 @@ app.use(bodyParser.json());
 
 mongoose.Promise = global.Promise;
 
-
-
 app.get('/posts', (req, res) => {
     BlogPost.find().exec().then(posts => {
             res.json(posts.map(post => post.apiRepr()));
