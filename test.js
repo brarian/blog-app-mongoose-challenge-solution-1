@@ -69,7 +69,7 @@ describe('PUT endpoint', function() {
 
 describe('delete endpoint', function() {
     it('should delete a post by id', function() {
-        return chai.request(app)
+        chai.request(app)
             .get('/posts/:id').then(function(res) {
                 return chai.request(app)
                     .delete(`/post/${res.body[0].id}`);
