@@ -2,3 +2,10 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: QWBjhQVLneCq72+ueoMKh4oJ0+qI5SlDz1xFpZzXTmtcKizqBC7ReKHioyqvPEUi/u1gnjaGcM/PSmB06z4sl3EUvFvk3WIDw1EdSIXfoxvrchc9K35hnq4PJ829kbSA5y+jIOV59IWprTeDsfyMXacjMmM+gc1qkrQ2QgKOIybhhDkAGGdF0KOb8ngWWwxfLmEmQ7vsopyarRfM0KEqJk5C0jkW3drS8dZqmdMLxo5SHsk4+CpKj7pgSvQbQm8iOxVlMbR7sq7Kl7jRlkrs4DGWGU8eQrHvdKa4hgYtNdEhQTLvR6QwSvkd+2AJRRfQkXTd5yHEjQmonW+Q/FKQo9WgtZ1SupHS7NdTHpyNqRTJQwF9FhCgw4PzNLt5q23zBPFTjG/vE/+dH82FlRjG576m3F6SrW6hnYoMFYCIef6xUNRTZieMmH17wDdyqjZAu8IEEv9Mw6fUoBSGaCBD3nKKAHfHJHhJx7MxBIRmopi3um051FFOCg3S4UFE8TmpzVTY20gA49o+D9BAuryyA4tIWbQZkk85e31fJMxpjkwHrKG4beBt+Dj188yXcONw4Q4gjgmrbE3zKhoNx62erHkCT/Ov4S2Cg0fLWuwp/QupVZQNBI3lif82cpGHoyel8b/vxelJX+hOsJZ/iDMpCtk2LDSXk7pkjL0aLi0EpoU=
+  app: obscure-savannah-83653
+  on:
+    repo: brarian/blog-app-mongoose-challenge-solution-1
